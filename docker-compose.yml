@@ -2,8 +2,7 @@ version: '3'
 services:
   node-app:
     image: m0hamedkhalid/mynode
-    env_file:
-      - ./.env
+
     depends_on:
       - mongo    
   mongo:
