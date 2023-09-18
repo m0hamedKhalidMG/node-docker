@@ -5,7 +5,7 @@ services:
       context: .
       target: development
     volumes:
-      - ./src/index.js:/app/src/index.js:ro   
+      - ./src:/app/src:ro   
     
   
    
