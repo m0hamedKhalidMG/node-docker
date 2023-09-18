@@ -18,7 +18,8 @@ services:
   nginx:
     image: nginx:stable-alpine
     volumes:
-      - /var/jenkins_home/workspace/tt/default.conf:/etc/nginx/conf.d/default.conf
+
+      - /var/jenkins_home/workspace/tt/default.conf:/etc/nginx/conf.d/default.conf:ro
     ports:
     - "80:80"
     depends_on:
