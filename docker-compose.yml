@@ -17,7 +17,8 @@ services:
   
   nginx:
     image: nginx:stable-alpine
-  
+    volumes:
+      - /var/jenkins_home/workspace/tt:/etc/nginx/conf.d
     ports:
     - "80:80"
     depends_on:
