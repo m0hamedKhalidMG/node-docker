@@ -6,7 +6,6 @@ services:
       target: development
     
   
-    volumes:
-      - ./src:/app/src:ro 
+   
     environment:  
       - node_env=dev
