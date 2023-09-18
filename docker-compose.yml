@@ -2,8 +2,7 @@ version: '3'
 services:
   node-app:
     image: m0hamedkhalid/mynode
-    ports:
-    - "4000:4000"
+    
     depends_on:
       - mongo    
   mongo:
